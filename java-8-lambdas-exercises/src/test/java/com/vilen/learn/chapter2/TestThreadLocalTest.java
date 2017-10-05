@@ -2,6 +2,7 @@ package com.vilen.learn.chapter2;
 
 import org.junit.Test;
 
+import javax.swing.*;
 import java.util.Calendar;
 
 import static org.junit.Assert.*;
@@ -35,5 +36,16 @@ public class TestThreadLocalTest {
             }
         };
         hello.run();
+    }
+
+    @Test
+    public void test3b() {
+        JButton button = new JButton();
+        button.addActionListener(event -> System.out.println(event.getActionCommand()));
+    }
+
+    @Test
+    public void test3c() {
+
     }
 }
