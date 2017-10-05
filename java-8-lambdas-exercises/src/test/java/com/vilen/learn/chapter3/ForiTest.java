@@ -25,4 +25,18 @@ public class ForiTest {
         Fori fori = new Fori();
         assertEquals(2, fori.listAllByStream());
     }
+
+    @Test
+    public void testListAllByStream1() {
+        Fori fori = new Fori();
+        fori.listAllByStream1();
+        // 不打印语句
+    }
+
+    @Test
+    public void testListAllByStream2() {
+        Fori fori = new Fori();
+        fori.listAllByStream2();
+        // 打印语句
+    }
 }

@@ -44,4 +44,19 @@ public class Fori {
         long count = artistList.stream().filter(artist -> artist.isFrom("London")).count();
         return (int)count;
     }
+
+    //像filter 这样只描述Stream ，最终不产生新集合的方法叫作惰性求值方法
+    public void listAllByStream1() {
+        artistList.stream().filter(artist -> {
+            System.out.println(artist.getName());
+            return artist.isFrom("London");
+        });
+    }
+
+    public void listAllByStream2() {
+        artistList.stream().filter(artist -> {
+            System.out.println(artist.getName());
+            return artist.isFrom("London");
+        }).count();
+    }
 }
