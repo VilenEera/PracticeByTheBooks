@@ -19,4 +19,21 @@ public class TestThreadLocalTest {
         String formatted = TestThreadLocal.formatter.get().getFormat().format(cal.getTime());
         assertEquals("01-一月-1970", formatted);
     }
+
+    @Test
+    public void testa() {
+        Runnable hello = () -> System.out.println(1);
+        hello.run();
+    }
+
+    @Test
+    public void testa1() {
+        Runnable hello = new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("1");
+            }
+        };
+        hello.run();
+    }
 }

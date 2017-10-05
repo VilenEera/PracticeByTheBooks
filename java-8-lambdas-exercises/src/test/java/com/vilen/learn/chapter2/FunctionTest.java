@@ -11,4 +11,15 @@ public class FunctionTest {
         Function<Long,Long> function = x->x+1;
         System.out.println(function.apply(10L));
     }
+
+    @Test
+    public void testa() {
+        Function<Long,Long> function = new Function<Long, Long>() {
+            @Override
+            public Long apply(Long aLong) {
+                return aLong+1;
+            }
+        };
+        System.out.println(function.apply(10L));
+    }
 }
