@@ -36,4 +36,7 @@ public class SampleData {
     public static List<Artist> getThreeArtists() {
         return asList(johnColtrane, johnLennon, theBeatles);
     }
+
+    // 创建一个新唱片
+    public static final Album aa = new Album("A Love Supreme", asList(new Track("Acknowledgement", 467), new Track("Resolution", 442)), asList(theBeatles));
 }
