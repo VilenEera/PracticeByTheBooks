@@ -19,4 +19,10 @@ public class TrackLengthTest {
         TrackLength trackLength = new TrackLength();
         trackLength.overloadedMethod("abc"); // String
     }
+
+    @Test
+    public void testOverloadMethod() throws Exception {
+        TrackLength trackLength = new TrackLength();
+        trackLength.overloadedMethod((x,y) -> x+y); //IntegerBinaryOperator
+    }
 }
