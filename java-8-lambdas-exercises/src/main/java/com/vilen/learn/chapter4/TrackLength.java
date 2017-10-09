@@ -4,6 +4,7 @@ import com.vilen.learn.chapter1.Album;
 
 import java.util.IntSummaryStatistics;
 import java.util.function.BinaryOperator;
+import java.util.function.Predicate;
 
 /**
  * Created by vilen on 2017/10/9.
@@ -40,5 +41,17 @@ public class TrackLength {
     }
     /*************************/
 
+    @FunctionalInterface
+    public interface IntPredicate {
+        public boolean test(int value);
+    }
+
+    public void overloadedMethod(Predicate<Integer> predicate) {
+        System.out.println("Predicate");
+    }
+
+    public void overloadedMethod(IntPredicate predicate) {
+        System.out.println("IntPredicate");
+    }
 
 }
