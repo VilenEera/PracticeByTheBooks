@@ -36,6 +36,5 @@ public class TrackLengthTest {
         // 下面这个虽然可以,但是不建议使用,
         // “代码异味”，不该再重载，而应当开始重新命名重载方法
         trackLength.overloadedMethod((TrackLength.IntPredicate) (x) -> true);
-
     }
 }
