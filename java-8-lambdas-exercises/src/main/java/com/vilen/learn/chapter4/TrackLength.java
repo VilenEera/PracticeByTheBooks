@@ -17,4 +17,12 @@ public class TrackLength {
                 trackLengthStats.getAverage(),
                 trackLengthStats.getSum());
     }
+
+    public void overloadedMethod(Object o) {
+        System.out.print("Object");
+    }
+
+    public void overloadedMethod(String s) {
+        System.out.print("String");
+    }
 }

@@ -13,4 +13,10 @@ public class TrackLengthTest {
     public void testLengthStatus() throws Exception {
         TrackLength.printTrackLengthStatistics(SampleData.aLoveSupreme);
     }
+
+    @Test
+    public void testOverload() throws Exception {
+        TrackLength trackLength = new TrackLength();
+        trackLength.overloadedMethod("abc"); // String
+    }
 }
