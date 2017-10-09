@@ -22,4 +22,13 @@ public class ParentTest {
         child.welcome();
         assertEquals("Child: Hi!", child.getLastMessage());
     }
+
+    @Test
+    public void concreteBeatsDefault() {
+        Parent parent = new OverridingParent();
+        parent.welcome();
+        assertEquals("Class Parent: Hi!", parent.getLastMessage());
+    }
+
+
 }
