@@ -11,6 +11,7 @@ public class LoggerTest {
     @Test
     public void testMethod() throws Exception {
         Logger logger = new Logger();
+        logger.debug("Look at this:" + "~");
         logger.debug(() -> "Look at this: " + "~~");
     }
 }
