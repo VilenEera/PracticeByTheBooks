@@ -33,6 +33,19 @@
       <version>1.19</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/io.vertx/vertx-core -->
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-core</artifactId>
+      <version>3.4.2</version>
+    </dependency>
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-unit</artifactId>
+      <version>3.4.2</version>
+      <scope>test</scope>
+    </dependency>
+
     <dependency>
       <groupId>org.openjdk.jmh</groupId>
       <artifactId>jmh-generator-annprocess</artifactId>
